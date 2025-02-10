@@ -1,6 +1,6 @@
 import React from 'react';
 import { Github, Linkedin, Mail, MessageCircle, Code } from 'lucide-react';
-import Resume from "../gallery/SmritiSarojSinha_Resume.pdf"
+import resumePDF from "../gallery/SmritiSarojSinha_Resume.pdf"
 import Myphoto from "../gallery/photo.jpg"
 
 
