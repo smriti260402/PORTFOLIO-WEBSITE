@@ -21,10 +21,10 @@ const Hero: React.FC = () => {
               <h1 className="text-3xl md:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-pink-600 to-blue-600 dark:from-pink-400 dark:to-blue-400">SMRITI SAROJ SINHA
               </h1>
             <p className="text-2xl md:text-4xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-pink-400 to-blue-400 dark:from-pink-300 dark:to-blue-300">
-              <h1 >PYTHON DEVELOPER</h1>
+              <h1 >SOFTWARE DEVELOPER</h1>
             </p>
             <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-8">
-            Building the future with Python and web development — where every line of code is an adventure!
+            Turning ideas into robust software — building solutions that make a real impact!
             </p>
             <div className="flex justify-center md:justify-start space-x-6">
               <a href="https://github.com/smriti260402" target="_blank" rel="noopener noreferrer" className="social-icon">

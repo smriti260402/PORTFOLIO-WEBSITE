@@ -8,33 +8,39 @@ const About: React.FC = () => {
         <h2 className="text-5xl font-bold text-center mb-12">About Me</h2>
 
         {/* Experience - full width */}
-        <div className="bg-white dark:bg-gray-700 rounded-xl shadow-lg p-6 mb-8 transform hover:scale-105 transition-transform duration-300">
-          <div className="flex items-center mb-4">
-            <Briefcase className="w-6 h-6 text-pink-500" />
-            <h3 className="text-3xl font-semibold ml-2 text-center">Experience</h3>
-          </div>
-          <p className="text-gray-600 dark:text-gray-300">
-            <span className="font-bold text-black dark:text-white">Devstringx Technologies Pvt. Ltd. - Software Developer</span> <br />
-            - Over the course of my 2-month MERN stack training at Devstringx, I built Rootify — a full-stack plant e-commerce web
-            application. <br />
-            - Following that, I continued with a 2-month internship where I deepened my skills in real-world development
-            practices.
-            <br />
-            - I am currently working as a Software Developer on the company’s core product CloveHR, an HRMS platform,
-            contributing to feature development and improvements using modern web technologies.
-          </p>
-          <br />
-          <p className="text-gray-600 dark:text-gray-300">
-            <span className="font-bold text-black dark:text-white"> Intern at Techgyan Avenues - IIT Bombay - Machine Learning using Python</span>
-             <br />- Developed the Rock And Mine prediction Model using the Logistic
-            Regression algorithm of machine learning.
-          </p>
-          <br />
-          <p className="text-gray-600 dark:text-gray-300">
-            <span className="font-bold text-black dark:text-white"> Intern at InternPe - Python Programming </span>
-            <br />- Developed the projects like Snake Game, Tic Tac Toe game using pygame library of python and the Digital clock using the concepts of python.
-          </p>
-        </div>
+<div className="bg-white dark:bg-gray-700 rounded-xl shadow-lg p-6 mb-8 transform hover:scale-105 transition-transform duration-300">
+  <div className="flex items-center mb-4">
+    <Briefcase className="w-6 h-6 text-pink-500" />
+    <h3 className="text-3xl font-semibold ml-2 text-center">Experience</h3>
+  </div>
+
+  <p className="text-gray-600 dark:text-gray-300">
+    <span className="font-bold text-black dark:text-white text-2xl">Devstringx Technologies Pvt. Ltd. - Software Developer</span> <br />
+    - Completed a <span className="font-bold">2-month MERN stack training</span>, developing <span className="font-bold">Rootify</span>, a full-stack <span className="font-bold">plant e-commerce web application</span> using <span className="font-bold">React, Node.js, Express, MySQL, Tailwind CSS</span>, and <span className="font-bold">Cloudinary</span> for image hosting. <br />
+    - Implemented <span className="font-bold">CRUD operations, product listing, seller-side dashboards</span>, and <span className="font-bold">responsive UI design</span>. <br />
+    - Continued as a <span className="font-bold">2-month intern</span>, gaining experience in <span className="font-bold">real-world software development practices</span>, working on feature enhancements and debugging. <br />
+    - Currently working as a <span className="font-bold">Software Developer</span> on the company’s core product <span className="font-bold">CloveHR - HRMS platform</span>, contributing to <span className="font-bold">backend APIs, frontend dashboards, employee management modules, and workflow optimizations</span>.
+  </p>
+  
+  <br />
+
+  <p className="text-gray-600 dark:text-gray-300">
+    <span className="font-bold text-black dark:text-white text-2xl">Intern at Techgyan Avenues - IIT Bombay - Machine Learning using Python</span> <br />
+    - Developed a <span className="font-bold">Rock and Mine Prediction Model</span> using <span className="font-bold">Python</span> and <span className="font-bold">Logistic Regression</span> algorithm. <br />
+    - Implemented <span className="font-bold">data preprocessing, feature extraction, model training, and evaluation</span> to predict outcomes efficiently. <br />
+    - Enhanced problem-solving and analytical skills in <span className="font-bold">machine learning model deployment and interpretation</span>.
+  </p>
+
+  <br />
+
+  <p className="text-gray-600 dark:text-gray-300">
+    <span className="font-bold text-black dark:text-white text-2xl">Intern at InternPe - Python Programming</span> <br />
+    - Built interactive projects using <span className="font-bold">Python</span> such as <span className="font-bold">Snake Game, Tic Tac Toe, and Digital Clock</span> using <span className="font-bold">Pygame library</span>. <br />
+    - Applied concepts like <span className="font-bold">loops, conditionals, functions, and event handling</span> for game logic and GUI development. <br />
+    - Developed <span className="font-bold">problem-solving, coding best practices, and project management skills</span> during the internship.
+  </p>
+</div>
+
 
         {/* Education + Interests grid */}
         <div className="grid md:grid-cols-2 gap-8">
@@ -59,14 +65,14 @@ const About: React.FC = () => {
 
           {/* Interests */}
           <div className="bg-white dark:bg-gray-700 rounded-xl shadow-lg p-6 transform hover:scale-105 transition-transform duration-300">
-            <div className="flex items-center mb-4">
-              <Heart className="w-6 h-6 text-pink-500" />
-              <h3 className="text-3xl font-semibold ml-2">Interests</h3>
-            </div>
-            <p className="text-gray-600 dark:text-gray-300">
-              Passionate about developing interactive applications with Python and creating visually stunning, responsive websites that deliver an exceptional user experience.
-            </p>
-          </div>
+  <div className="flex items-center mb-4">
+    <Heart className="w-6 h-6 text-pink-500" />
+    <h3 className="text-3xl font-semibold ml-2 text-center">Interests</h3>
+  </div>
+  <p className="text-gray-600 dark:text-gray-300">
+    Passionate about <span className="font-bold">developing interactive software applications</span> using <span className="font-bold">Python</span> and modern <span className="font-bold">web technologies</span>. I enjoy creating <span className="font-bold">visually appealing, responsive websites</span> and tools that provide an <span className="font-bold">exceptional user experience</span>. Exploring <span className="font-bold">innovative software solutions</span> and improving my technical skills continuously is what drives me.
+  </p>
+</div>
         </div>
 
         <div className="mt-12 bg-white dark:bg-gray-700 rounded-xl shadow-lg p-8">
