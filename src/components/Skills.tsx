@@ -8,18 +8,17 @@ interface Skill {
 }
 
 const skills: Skill[] = [
-  { name: 'Python', level: 90, category: 'Programming Skills' },
-  { name: 'C++', level: 85, category: 'Programming Skills' },
+  { name: 'Python', level: 75, category: 'Programming Skills' },
+  { name: 'Node', level: 80, category: 'Programming Skills' },
   { name: 'HTML/CSS', level: 70, category: 'Programming Skills' },
-  { name: 'React', level: 50, category: 'Programming Skills' },
-  { name: 'Javascript', level: 50, category: 'Programming Skills' },
+  { name: 'React', level: 80, category: 'Programming Skills' },
+  { name: 'Javascript', level: 75, category: 'Programming Skills' },
   { name: 'Tailwind CSS', level: 60, category: 'Programming Skills' },
 
   { name: 'DSA', level: 80, category: 'Technical Skills' },
   { name: 'Competitive Programming', level: 60, category: 'Technical Skills' },
   { name: 'Git/Github', level: 85, category: 'Technical Skills' },
   { name: 'MySQL', level: 70, category: 'Technical Skills' },
-  { name: 'MongoDB', level: 60, category: 'Technical Skills' },
   { name: 'Machine Learning ', level: 60, category: 'Technical Skills' },
 
   { name: 'Problem solving ', level: 75, category: 'Soft Skills' },
@@ -38,7 +37,7 @@ const Skills: React.FC = () => {
   return (
     <section id="skills" className="py-20 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center mb-12">Skills</h2>
+        <h2 className="text-5xl font-bold text-center mb-12">Skills</h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {categories.map((category) => (
@@ -46,7 +45,7 @@ const Skills: React.FC = () => {
               <div className="flex items-center mb-6">
                 {category === 'Language' && <Layout className="w-6 h-6 text-purple-500" />}
                 
-                <h3 className="text-xl font-semibold ml-2">{category}</h3>
+                <h3 className="text-3xl font-semibold ml-2">{category}</h3>
               </div>
 
               <div className="space-y-4">

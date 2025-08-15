@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Mail, Phone, MapPin, Send } from 'lucide-react';
+import emailjs from "emailjs-com";
+
 
 const Contact: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -10,8 +12,21 @@ const Contact: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
-    console.log('Form submitted:', formData);
+
+    // Send email using EmailJS
+    emailjs.send(
+      'service_k54mip7',       // Replace with your EmailJS service ID
+      'template_h1phcem',      // Replace with your EmailJS template ID
+      formData,
+      'EWRb1kHb30bnFNTpl'        // Replace with your EmailJS public key
+    ).then((result) => {
+      console.log('Email sent successfully:', result.text);
+      alert('Message sent successfully!');
+      setFormData({ name: '', email: '', message: '' }); // Clear form
+    }, (error) => {
+      console.error('Email send error:', error.text);
+      alert('Failed to send message, please try again.');
+    });
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -24,9 +39,10 @@ const Contact: React.FC = () => {
   return (
     <section id="contact" className="py-20 bg-white dark:bg-gray-900">
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center mb-12">Contact Me</h2>
+        <h2 className="text-5xl font-bold text-center mb-12">Contact Me</h2>
 
         <div className="grid md:grid-cols-2 gap-12">
+          {/* Contact Info */}
           <div>
             <div className="space-y-8">
               <div className="flex items-center space-x-4">
@@ -61,6 +77,7 @@ const Contact: React.FC = () => {
             </div>
           </div>
 
+          {/* Contact Form */}
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
               <label htmlFor="name" className="block text-sm font-medium mb-2">

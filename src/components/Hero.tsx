@@ -50,7 +50,7 @@ const Hero: React.FC = () => {
             
 
             <div 
-  onClick={() => window.open(Resume, "_blank")}  // Opens resume in a new tab
+  onClick={() => window.open(resumePDF, "_blank")}  // Opens resume in a new tab
   className="w-60 h-12 flex items-center justify-center text-lg font-semibold text-white bg-gradient-to-r from-pink-500 to-blue-500 rounded-full shadow-md hover:scale-105 transition-transform duration-300 cursor-pointer"
 >
   Download Resume

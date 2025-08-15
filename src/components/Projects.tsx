@@ -1,7 +1,7 @@
 import React from 'react';
 import { Github } from 'lucide-react';
 import calculator from "../gallery/calculator.jpeg"
-import chatapp from "../gallery/chatapp.jpg"
+import chatapp from "../gallery/chatapp.png"
 import digiclock from "../gallery/digital_clock.png"
 import flbird from "../gallery/flappy_bird_snippet.png"
 import pswrdgen from "../gallery/password_gen.png"
@@ -26,10 +26,10 @@ const projects: Project[] = [
     githubUrl: 'https://github.com/smriti260402/My_portfolio',
   },
   {
-    title: 'ChatApp',
-    description: 'A Chat App using Django is a real-time messaging platform built with Django for backend logic and WebSockets for instant communication. It allows users to send and receive messages dynamically without refreshing the page. The app can be enhanced with features like user authentication, chat rooms, media sharing, and notifications. It is a great project for learning real-time web communication using Django Channels.',
+    title: 'Sentiment Analysis System',
+    description: 'I built a complete sentiment analysis platform that takes user reviews as input, processes them using Python and a Logistic Regression model trained on TF-IDF vectors, and predicts whether each review is positive or negative. The backend is powered by Flask and scikit-learn, while the frontend is built using React and Tailwind CSS for a clean modern UI. Users can upload a list of reviews and instantly get sentiment predictions along with visual insights, demonstrating the integration of machine learning with full-stack web development.',
     image: chatapp,
-    technologies: ['Python', 'Django','Redis','Daphne','Django Channels','SQLite','MySQL','HTML, CSS, JavaScript ', 'WebSockets','Bootstrap'],
+    technologies: ['Python', 'Flask','Logistic Regression','TF-IDF Vectorizer','React.js','Tailwind CSS','Axios (API calls)','Pandas', 'scikit-learn'],
     githubUrl: 'https://github.com/smriti260402/chatapp',
   },
 
@@ -86,7 +86,7 @@ const Projects: React.FC = () => {
   return (
     <section id="projects" className="py-20 bg-gray-50 dark:bg-gray-800">
       <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold text-center mb-12">Projects</h2>
+        <h2 className="text-5xl font-bold text-center mb-12">Projects</h2>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
