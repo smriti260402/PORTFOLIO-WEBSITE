@@ -30,7 +30,7 @@ const projects: Project[] = [
     description: 'I built a complete sentiment analysis platform that takes user reviews as input, processes them using Python and a Logistic Regression model trained on TF-IDF vectors, and predicts whether each review is positive or negative. The backend is powered by Flask and scikit-learn, while the frontend is built using React and Tailwind CSS for a clean modern UI. Users can upload a list of reviews and instantly get sentiment predictions along with visual insights, demonstrating the integration of machine learning with full-stack web development.',
     image: chatapp,
     technologies: ['Python', 'Flask','Logistic Regression','TF-IDF Vectorizer','React.js','Tailwind CSS','Axios (API calls)','Pandas', 'scikit-learn'],
-    githubUrl: 'https://github.com/smriti260402/chatapp',
+    githubUrl: 'https://github.com/smriti260402/Sentiment-Analysis-System',
   },
 
   {
